@@ -7,7 +7,7 @@ export class FrequencyPtTwo {
   history: Array<number>;
 
   constructor() {
-    this.rawData = fs.readFileSync('input').toString();
+    this.rawData = fs.readFileSync('src/dayOne/input').toString();
     this.count = 0;
     this.postInitialize();
     this.history = [];

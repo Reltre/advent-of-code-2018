@@ -1,5 +1,5 @@
-import { FrequencyPtOne } from '../src/frequencyPtOne';
-import { FrequencyPtTwo } from '../src/frequencyPtTwo';
+import { FrequencyPtOne } from '../../src/dayOne/frequencyPtOne';
+import { FrequencyPtTwo } from '../../src/dayOne/frequencyPtTwo';
 
 namespace FrequencyPartOneTests {
   test('it reads in an input file', () => {

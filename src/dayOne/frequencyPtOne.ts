@@ -6,7 +6,7 @@ export class FrequencyPtOne {
   count: number;
 
   constructor() {
-    this.rawData = fs.readFileSync('input').toString();
+    this.rawData = fs.readFileSync('src/dayOne/input').toString();
     this.count = 0;
   }
 
