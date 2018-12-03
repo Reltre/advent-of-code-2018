@@ -36,10 +36,12 @@ export default class InventorySystem {
     let commonCharacters = '';
     entries.forEach((outerId) => {
       entries.slice(1).forEach((innerId) => {
-        differentCharacterIndex = this.findDifferentCharacterIndex(innerId, outerId);
+        differentCharacterIndex = 
+          this.findDifferentCharacterIndex(innerId, outerId);
         if(differentCharacterIndex) {
-          commonCharacters = innerId.slice(0, differentCharacterIndex)
-                                    .concat(innerId.slice(differentCharacterIndex + 1));
+          commonCharacters = innerId
+            .slice(0, differentCharacterIndex)
+            .concat(innerId.slice(differentCharacterIndex + 1));
         }
       })
     });
@@ -64,6 +66,3 @@ export default class InventorySystem {
     return differentCharacterIndex;
   }
 }
-
-const inventory = new InventorySystem();
-console.log(inventory.commonIdValues());

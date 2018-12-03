@@ -26,13 +26,9 @@ namespace InventoryManagementSystemTestsPtOne {
       .toEqual(inventory.doubleCount * inventory.tripleCount);
   })
 
-  test('finds ids that differ by one character', () => {
+  test('finds common characters between ids that differ by one character', () => {
     const inventory = new InventorySystem();
     inventory.data = "fghij\nfguij"
     expect(inventory.commonIdValues()).toEqual('fgij')
   })
-}
-
-namespace InventoryManagementSystemTestsPtTwo {
-  
 }
